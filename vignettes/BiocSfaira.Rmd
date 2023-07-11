@@ -34,6 +34,7 @@ set.seed(123)
 library(BiocSfaira)
 library(zellkonverter)
 library(SingleCellExperiment)
+library(plotly)
 ```
 
 # Resources
@@ -118,6 +119,9 @@ The embedding has 64 columns:
 ```{r lkpr}
 pairs(reducedDim(sce)[,1:4])
 ```
+```{r lkpr2}
+pairs(reducedDim(sce)[,61:64])
+```
 
 The tutorial suggests the following steps for visualization:
 ```{r dovis}
@@ -135,3 +139,14 @@ plot(um, col=as.numeric(factor(ct)))
 We can use R's visualization tools now to help explore interactively.
 Exercise: make an interactive visualization using ggplotly.
 
+Solution:
+```{r doplo}
+library(ggplot2)
+library(plotly)
+umdf = data.frame(um, type=ct)
+gp2 = ggplot(umdf, aes(x=X1, y=X2, text=type, colour=type)) + geom_point()
+ggplotly(gp2)
+```
+
+Exercise: Produce a 3 dimensional UMAP projection and use threejs
+to produce a rotatable 3-d visualization.
