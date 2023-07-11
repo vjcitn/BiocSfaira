@@ -1,0 +1,27 @@
+Package: BiocSfaira
+Date: 2022-10-01
+Title: BiocSfaira
+Version: 0.0.0
+Authors@R: 
+    c(person(
+        "Vincent", "Carey", role = c("aut", "cre"),
+        email = "stvjc@channing.harvard.edu",
+        comment = c(ORCID = "0000-0003-4046-0063")
+     )
+    )
+Description: Interface to sfaira zoo for single cell analysis
+License: Artistic-2.0
+Encoding: UTF-8
+Depends: R (>= 3.6), dplyr, reticulate
+Suggests: knitr, testthat, BiocStyle
+VignetteBuilder: knitr
+biocViews: Infrastructure
+RoxygenNote: 7.2.3
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "sfaira", pip = TRUE),
+      list(package = "scanpy", pip = TRUE),
+      list(package = "numpy", version = "1.23.0", pip = TRUE)
+    )
+  )
