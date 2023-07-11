@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/404.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/articles/BiocSfaira.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/index.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/reference/list_celltype_models.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/reference/list_embedding_models.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/reference/scanpy_ref.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/vjcitn/BiocSfaira/reference/sfaira_ui.html</loc>
+  </url>
+</urlset>

@@ -25,3 +25,5 @@ Config/reticulate:
       list(package = "numpy", version = "1.23.0", pip = TRUE)
     )
   )
+URL: https://github.com/vjcitn/BiocSfaira
+BugReports: https://github.com/vjcitn/BiocSfaira/issues
