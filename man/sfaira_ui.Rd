@@ -2,10 +2,13 @@
 % Please edit documentation in R/setup.R
 \name{sfaira_ui}
 \alias{sfaira_ui}
-\title{test with basilisk}
+\title{hand back ui.UserInterface from sfaira from specified basilisk environment}
 \usage{
 sfaira_ui()
 }
 \description{
-test with basilisk
+hand back ui.UserInterface from sfaira from specified basilisk environment
+}
+\note{
+sfaira 0.3.12, tensorflow 2.8.0, protobuf 3.20.0
 }
