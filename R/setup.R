@@ -1,9 +1,16 @@
-#' hand reference to ui back to R
+
+#' hand back ui.UserInterface from sfaira from specified basilisk environment
+#' @note sfaira 0.3.12, tensorflow 2.8.0, protobuf 3.20.0
 #' @export
 sfaira_ui = function() {
-  sfaira = reticulate::import("sfaira")
-  sfaira$ui$UserInterface(sfaira_repo=TRUE)
+ proc = basilisk::basiliskStart(bsklenv, testload="sfaira") # avoid package-specific import
+ #on.exit(basilisk::basiliskStop(proc))
+ basilisk::basiliskRun(proc, function() {
+     sfaira = reticulate::import("sfaira")
+     sfaira$ui$UserInterface(sfaira_repo=TRUE)
+   })
 }
+
 
 #' look at list of embeddings
 #' @import reticulate

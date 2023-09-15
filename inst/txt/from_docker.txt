@@ -1,0 +1,32 @@
+-- note -- to find out the versions for a consistent
+and runnable sfaira, i used a docker container found under
+leanderd on docker hub, queried the pip versions.
+
+leanderd
+
+root@b407259c1190:~# pip list | grep tensor
+tensorboard                  2.8.0
+tensorboard-data-server      0.6.1
+tensorboard-plugin-wit       1.8.1
+tensorflow                   2.8.0
+tensorflow-io-gcs-filesystem 0.24.0
+WARNING: You are using pip version 21.2.4; however, version 23.2.1 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+root@b407259c1190:~# pip list | grep numpy
+numpy                        1.21.5
+numpy-groupies               0.9.14
+WARNING: You are using pip version 21.2.4; however, version 23.2.1 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+root@b407259c1190:~# cat /etc/users
+cat: /etc/users: No such file or directory
+root@b407259c1190:~# ls
+sfaira_data  sfaira_loader
+root@b407259c1190:~# ls *data
+root@b407259c1190:~# ls *loader
+root@b407259c1190:~# pip list | grep sfai
+sfaira                       0.3.12
+WARNING: You are using pip version 21.2.4; however, version 23.2.1 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+root@b407259c1190:~# pip list | grep keras
+keras                        2.8.0
+

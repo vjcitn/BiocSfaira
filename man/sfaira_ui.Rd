@@ -2,10 +2,10 @@
 % Please edit documentation in R/setup.R
 \name{sfaira_ui}
 \alias{sfaira_ui}
-\title{hand reference to ui back to R}
+\title{test with basilisk}
 \usage{
 sfaira_ui()
 }
 \description{
-hand reference to ui back to R
+test with basilisk
 }
